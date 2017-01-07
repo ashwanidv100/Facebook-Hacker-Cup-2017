@@ -5,9 +5,6 @@ import java.io.IOException;
 
 public class Problem1 {
 	
-	int width  = 100,
-		height = 100;
-	
 	public static void main(String[] args) throws Exception {
 		
 		String FILENAME = "input1.txt"; // Files should be in root
@@ -40,7 +37,7 @@ public class Problem1 {
 		}
 		
 		System.out.print(output.substring(0, output.length() - 1));
-
+		br.close();
 	}
 	
 	static boolean circleContains(int P, int X, int Y) {
